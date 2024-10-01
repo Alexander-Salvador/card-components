@@ -101,7 +101,7 @@ a {
     }
 }
 
-@media (width <=376px) {
+@media (width <=475px) {
     .container_cards {
         background-color: var(--bg-color);
         box-shadow: 0px 0px 20px -3px rgba(175, 175, 175, 0.75);
