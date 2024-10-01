@@ -1,0 +1,135 @@
+:root {
+
+    /* COLORS */
+    --Bright-orange-1: hsl(31, 77%, 52%);
+    --Dark-cyan-2: hsl(184, 100%, 22%);
+    --Very-dark-cyan-3: hsl(179, 100%, 13%);
+    --paragraph: hsla(0, 0%, 100%, 0.75);
+    --bg-color: hsl(0, 0%, 95%);
+
+    /* BREAKPOINTS */
+    --mb: 375px;
+    --dsk: 1440px;
+
+    /* FONT SIZE */
+    --f-size: 15px;
+
+    /* FONT FAMILY */
+    --font-f1: "Lexend Deca", sans-serif;
+    --font-f2: "Big Shoulders Display", sans-serif;
+
+    /* FONT WEIGHT */
+    --lexa-w: 400;
+    --big-s: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    /* width: 100%; */
+    height: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container_cards {
+    background-color: var(--bg-color);
+    box-shadow: 0px 0px 20px -3px rgba(175, 175, 175, 0.75);
+    width: 1100px;
+    height: 550px;
+    margin: 80px auto;
+    border-radius: 20px;
+}
+
+.container__3cards {
+    width: 700px;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+
+    .one {
+        background-color: var(--Bright-orange-1);
+        border-radius: 10px 0 0 10px;
+
+        .card__paragraph {
+            padding: 10px 30px 70px;
+        }
+
+        .card__button {
+            color: var(--Bright-orange-1);
+        }
+    }
+
+    .two {
+        background-color: var(--Dark-cyan-2);
+
+        .card__paragraph {
+            padding: 10px 30px 90px;
+        }
+
+        .card__button {
+            color: var(--Dark-cyan-2);
+        }
+    }
+
+    .three {
+        background-color: var(--Very-dark-cyan-3);
+        border-radius: 0 10px 10px 0;
+
+        .card__paragraph {
+            padding: 10px 30px 90px;
+        }
+
+        .card__button {
+            color: var(--Very-dark-cyan-3);
+        }
+    }
+}
+
+
+
+.cards {
+    height: 420px;
+    /* width: 250px; */
+    background-color: red;
+
+    .card__icon {
+        padding: 20px 30px;
+    }
+
+    .card__title {
+        color: var(--bg-color);
+        font-family: var(--font-f2);
+        font-weight: 700;
+        font-size: 30px;
+        padding: 20px 30px;
+    }
+
+    .card__paragraph {
+        color: var(--paragraph);
+    }
+
+    .card__button {
+        background-color: var(--bg-color);
+        padding: 10px 20px;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        margin: 0 30px;
+    }
+
+    .card__button:hover {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+    }
+}
